@@ -1,0 +1,405 @@
+.main-nav {
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  padding: 0.5rem;
+  z-index: 100;
+}
+.main-nav .nav-container {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+  justify-content: center;
+  align-items: center;
+}
+.main-nav .nav-container .main-nav__logo {
+  width: 36px;
+  margin: 0 0.5rem;
+}
+.main-nav .nav-container .searchbar {
+  height: fit-content;
+  padding: 0.5rem 0.2rem 0.5rem 2rem;
+  background-color: #eeeeee;
+  border: none;
+  margin: 0 auto;
+  width: 15rem;
+}
+.main-nav .nav-container .main-nav__link {
+  margin: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgb(128, 128, 128);
+  cursor: pointer;
+}
+.main-nav .nav-container .main-nav__link:hover {
+  color: black;
+}
+
+.content-divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  margin: 0.5rem 0;
+}
+
+.bottom-container-button {
+  text-align: center;
+  border-top-width: 1px;
+  border-top-color: rgb(196, 196, 196);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 100%;
+  height: 2.7rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 200ms;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(128, 128, 128);
+}
+.bottom-container-button:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+.round-image-div {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+}
+
+.round-image {
+  width: 100%;
+}
+
+.subcontent__title {
+  font-weight: bold;
+  margin: 0.1rem 0;
+}
+
+.subcontent__subtitle {
+  font-size: 0.8rem;
+  color: rgb(128, 128, 128);
+  margin: 0.5rem 0 1rem 0;
+  width: fit-content;
+}
+
+.subcontent__detail {
+  font-size: 0.85rem;
+  margin: 0.1rem 0 1rem 0;
+}
+
+.button-blue {
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  width: fit-content;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(10, 102, 194);
+  color: white;
+  font-weight: 700;
+  transition: background-color 200ms;
+}
+.button-blue:hover, .button-blue:active {
+  background-color: #064079;
+}
+
+.button-blue-hollow {
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  width: fit-content;
+  cursor: pointer;
+  color: rgb(10, 102, 194);
+  font-weight: 700;
+  border-width: 1px;
+  border-color: rgb(10, 102, 194);
+  background-color: white;
+  transition: all 200ms;
+  box-sizing: content-box;
+}
+.button-blue-hollow:hover, .button-blue-hollow:active {
+  background-color: #cfe6fd;
+}
+
+.button-gray {
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  width: fit-content;
+  cursor: pointer;
+  border-width: 1px;
+  border-color: rgb(128, 128, 128);
+  background-color: white;
+  color: rgb(128, 128, 128);
+  font-weight: 700;
+  transition: all 200ms;
+}
+.button-gray:hover, .button-gray:active {
+  background-color: #e6e6e6;
+}
+
+.blue-link {
+  color: #0b73da;
+  font-weight: 700;
+  cursor: pointer;
+}
+.blue-link:hover {
+  text-decoration: underline;
+}
+
+.container-item {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin: 0.5rem 0;
+}
+.container-item img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+}
+.container-item .subcontent__detail {
+  margin-bottom: 0;
+}
+.container-item .subcontent__subtitle {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    position: fixed;
+  }
+  .main-nav .nav-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-nav .nav-container .searchbar {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+html {
+  height: fit-content;
+  width: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.06rem;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+  box-sizing: border-box;
+  padding-top: 0rem;
+}
+
+.main {
+  margin-top: 1rem;
+}
+
+.container {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0px 2px 0.05px grey;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  position: relative;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: fit-content;
+  min-height: 8rem;
+}
+.container .activity-title {
+  margin-bottom: 0;
+}
+.container .activity-followers {
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+
+.container-title {
+  margin: 0.5rem 0 1rem 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.main-section {
+  grid-area: main-section;
+}
+.main-section .profile-summary {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0px 2px 0.05px grey;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  position: relative;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: fit-content;
+  min-height: 8rem;
+}
+.main-section .profile-summary .container-title {
+  margin-bottom: 0rem;
+}
+.main-section .profile-summary .round-image-div {
+  margin-top: 4rem;
+  position: relative;
+}
+.main-section .profile-summary .background-image-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  height: 12.5rem;
+  background-image: url("../img/backgroundLinkedinPic.jpeg");
+  background-size: cover;
+}
+.main-section .profile-summary .headline {
+  font-size: 0.95rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.main-section .subcontent__subtitle {
+  margin: 0.5rem 0;
+}
+.main-section .intro-association {
+  display: none;
+}
+.main-section #activity-follow-button {
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+.extras {
+  grid-area: extras;
+}
+.extras .extras__item {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0px 2px 0.05px grey;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  position: relative;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+.extras .extras__item .container-title {
+  margin: 1rem 0 1rem 0;
+}
+.extras .container-item {
+  margin-top: 1rem;
+}
+.extras .container-item img {
+  border-radius: 50px;
+}
+.extras .container-item .container-item__description .button-gray {
+  margin-bottom: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.footer-title {
+  color: rgb(10, 102, 194);
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-title .footer-logo {
+  color: white;
+  background-color: rgb(10, 102, 194);
+  border-radius: 3px;
+  height: fit-content;
+}
+
+.footer-box {
+  height: fit-content;
+  max-width: 1140px;
+  margin: 1rem auto 1rem auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer-box .footer-container .footer-link {
+  display: block;
+  color: gray;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+.footer-box .footer-container .footer-link:hover, .footer-box .footer-container .footer-link:active {
+  color: #0b73da;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 0 1.5rem;
+    padding-top: 4rem;
+  }
+  .main {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "main-section extras";
+    gap: 0.8rem;
+    max-width: 1140px;
+    height: 100%;
+    position: static;
+    z-index: -1;
+  }
+  .footer-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .main {
+    gap: 1.5rem;
+    position: static;
+    z-index: -1;
+  }
+  .main-section .intro-association {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 15rem;
+    right: 0;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  .main-section .intro-association:hover {
+    color: #0b73da;
+    text-decoration: underline;
+  }
+  .main-section .intro-association img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+  }
+  .main-section .intro-association p {
+    font-weight: 700;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

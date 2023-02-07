@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Layout - LinkedIn Clone</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-nav">
+      <div class="nav-container">
+        <img src="./img/linkedinLogo.jpeg" class="main-nav__logo" />
+        <input class="searchbar" type="text" placeholder="Search" />
+        <a class="main-nav__link">Home</a>
+        <a class="main-nav__link">My Network</a>
+        <a class="main-nav__link">Jobs</a>
+        <a class="main-nav__link">Messaging</a>
+        <a class="main-nav__link">Notifications</a>
+        <a class="main-nav__link">Me</a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main-section">
+        <section class="profile-summary">
+          <div class="background-image-div"></div>
+          <div class="round-image-div">
+            <img class="round-image" src="./img/linkedinPic.jpeg" />
+          </div>
+          <div class="intro-association">
+            <img src="./img/snhuLogo.jpeg" />
+            <p class="subcontent__detail">Southern New Hampshire University</p>
+          </div>
+          <h1 class="container-title">Ethan Klukkert</h1>
+          <p class="headline">Software Developer | React | TypeScript | SASS</p>
+          <p class="subcontent__subtitle">
+            Greater Orlando ·
+            <span class="subcontent__subtitle blue-link">Contact Info</span>
+          </p>
+          <p class="subcontent__subtitle blue-link">33 connections</p>
+          <button class="button-blue">+ Follow</button>
+          <button class="button-blue-hollow">Message</button>
+          <button class="button-gray">More</button>
+        </section>
+        <section class="container">
+          <button class="button-gray" id="activity-follow-button">
+            + Follow
+          </button>
+          <h1 class="container-title activity-title">Activity</h1>
+          <p class="blue-link activity-followers">33 followers</p>
+          <div class="subcontent">
+            <p class="subcontent__title">Ethan hasn't posted lately</p>
+            <p class="subcontent__detail">
+              Ethan's recent posts and comments will be displayed here.
+            </p>
+          </div>
+          <button class="bottom-container-button">Show all activity -></button>
+        </section>
+        <section class="container">
+          <h1 class="container-title">About</h1>
+          <div class="subcontent">
+            <p class="subcontent__detail">
+              I am a Software Developer who strives to make the best
+              applications from the user to the code itself. I leave no solution
+              unexplored nor topic unexplained. I make sure to learn from my
+              mistakes and receive all feedback using effective communication
+              and an open mind to become the best developer I can be.
+            </p>
+          </div>
+        </section>
+        <section class="container">
+          <h1 class="container-title">Education</h1>
+          <div class="container-item">
+            <img src="./img/snhuLogo.jpeg" />
+            <div class="container-item__description">
+              <p class="subcontent__title">Southern New Hampshire University</p>
+              <p class="subcontent__detail">
+                Bachelor of Science - BS, Computer Science
+              </p>
+              <p class="subcontent__subtitle">Jun 2021 - Oct 2023</p>
+              <p class="subcontent__detail">
+                Current GPA (as of Jan 2023): 3.90 / 4.00
+              </p>
+              <p class="subcontent__detail">Skills: Java . C++</p>
+            </div>
+          </div>
+          <div class="content-divider"></div>
+          <div class="container-item">
+            <img src="./img/accLogo.jpeg" />
+            <div class="container-item__description">
+              <p class="subcontent__title">Arapahoe Community College</p>
+              <p class="subcontent__subtitle">May 2019 - May 2021</p>
+              <p class="subcontent__detail">
+                General Education Classes for BS in Computer Science
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="container">
+          <h1 class="container-title">Volunteering</h1>
+          <div class="container-item">
+            <img src="./img/goodwillLogo.jpeg" />
+            <div class="container-item__description">
+              <p class="subcontent__title">Drive Thru / Sorting</p>
+              <p class="subcontent__detail">
+                Goodwill Industries International
+              </p>
+              <p class="subcontent__subtitle">Nov 2018 - Mar 2019 · 5 mos</p>
+              <p class="subcontent__detail">
+                Greeted dozens of donors each day in the drive-through and
+                helped them with their donations.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="container" style="padding-bottom: 3.5rem">
+          <h1 class="container-title">Skills</h1>
+          <p class="subcontent__title">Git</p>
+          <div class="content-divider"></div>
+          <p class="subcontent__title">SASS</p>
+          <div class="content-divider"></div>
+          <p class="subcontent__title">TypeScript</p>
+          <button class="bottom-container-button">Show all 9 skills -></button>
+        </section>
+        <section class="container">
+          <h1 class="container-title">Honors & awards</h1>
+          <p class="subcontent__title">President's List</p>
+          <p class="subcontent__detail">Jan 2023</p>
+          <div class="container-item">
+            <img
+              src="./img/snhuLogo.jpeg"
+              style="width: 1.5rem; height: 1.5rem"
+            />
+            <p class="subcontent__detail">
+              Associated with Southern New Hampshire University
+            </p>
+          </div>
+          <p class="subcontent__detail">
+            Named To SNHU President's List: Fall 2021, Spring 2022, Summer 2022,
+            Fall 2022
+          </p>
+        </section>
+        <section class="container">
+          <h1 class="container-title">Languages</h1>
+          <p class="subcontent__title">English</p>
+          <p class="subcontent__subtitle">Native or bilingual proficiency</p>
+          <div class="content-divider"></div>
+          <p class="subcontent__title">French</p>
+          <p class="subcontent__subtitle">Limited working proficiency</p>
+        </section>
+      </section>
+      <section class="extras">
+        <section class="extras__item">
+          <h1 class="container-title">People Also Viewed</h1>
+          <div class="container-item">
+            <img src="./img/profilePicPlaceholder.jpeg" />
+            <div class="container-item__description">
+              <p class="subcontent__title">Jane Doe</p>
+              <p class="subcontent__detail">
+                Filler Content at Lorem Ipsum Dolor Sit Amet
+              </p>
+              <button class="button-gray">+ Follow</button>
+            </div>
+          </div>
+          <div class="content-divider"></div>
+          <div class="container-item">
+            <img src="./img/profilePicPlaceholder.jpeg" />
+            <div class="container-item__description">
+              <p class="subcontent__title">John Smith</p>
+              <p class="subcontent__detail">
+                Filler Content at Lorem Ipsum Dolor Sit Amet
+              </p>
+              <button class="button-gray">+ Follow</button>
+            </div>
+          </div>
+          <div class="content-divider"></div>
+          <div class="container-item">
+            <img src="./img/profilePicPlaceholder.jpeg" />
+            <div class="container-item__description">
+              <p class="subcontent__title">Jane Smith</p>
+              <p class="subcontent__detail">
+                Filler Content at Lorem Ipsum Dolor Sit Amet
+              </p>
+              <button class="button-gray">+ Follow</button>
+            </div>
+          </div>
+          <div class="content-divider"></div>
+          <div class="container-item">
+            <img src="./img/profilePicPlaceholder.jpeg" />
+            <div class="container-item__description">
+              <p class="subcontent__title">John Doe</p>
+              <p class="subcontent__detail">
+                Filler Content at Lorem Ipsum Dolor Sit Amet
+              </p>
+              <button class="button-gray">Message</button>
+            </div>
+          </div>
+          <div class="content-divider"></div>
+          <div class="container-item">
+            <img src="./img/profilePicPlaceholder.jpeg" />
+            <div class="container-item__description">
+              <p class="subcontent__title">John Jane</p>
+              <p class="subcontent__detail">
+                Filler Content at Lorem Ipsum Dolor Sit Amet
+              </p>
+              <button class="button-gray">Message</button>
+            </div>
+          </div>
+          <button class="bottom-container-button">Show More</button>
+        </section>
+        <section class="extras__item">
+          <h1 class="container-title">People You May Know</h1>
+          <div class="container-item">
+            <img src="./img/profilePicPlaceholder.jpeg" />
+            <div class="container-item__description">
+              <p class="subcontent__title">Jane Doe</p>
+              <p class="subcontent__detail">
+                Filler Content at Lorem Ipsum Dolor Sit Amet
+              </p>
+              <button class="button-gray">Connect</button>
+            </div>
+          </div>
+          <div class="content-divider"></div>
+          <div class="container-item">
+            <img src="./img/profilePicPlaceholder.jpeg" />
+            <div class="container-item__description">
+              <p class="subcontent__title">John Smith</p>
+              <p class="subcontent__detail">
+                Filler Content at Lorem Ipsum Dolor Sit Amet
+              </p>
+              <button class="button-gray">Connect</button>
+            </div>
+          </div>
+          <div class="content-divider"></div>
+          <div class="container-item">
+            <img src="./img/profilePicPlaceholder.jpeg" />
+            <div class="container-item__description">
+              <p class="subcontent__title">Jane Smith</p>
+              <p class="subcontent__detail">
+                Filler Content at Lorem Ipsum Dolor Sit Amet
+              </p>
+              <button class="button-gray">Connect</button>
+            </div>
+          </div>
+          <div class="content-divider"></div>
+          <div class="container-item">
+            <img src="./img/profilePicPlaceholder.jpeg" />
+            <div class="container-item__description">
+              <p class="subcontent__title">John Doe</p>
+              <p class="subcontent__detail">
+                Filler Content at Lorem Ipsum Dolor Sit Amet
+              </p>
+              <button class="button-gray">Connect</button>
+            </div>
+          </div>
+          <div class="content-divider"></div>
+          <div class="container-item">
+            <img src="./img/profilePicPlaceholder.jpeg" />
+            <div class="container-item__description">
+              <p class="subcontent__title">John Jane</p>
+              <p class="subcontent__detail">
+                Filler Content at Lorem Ipsum Dolor Sit Amet
+              </p>
+              <button class="button-gray">Connect</button>
+            </div>
+          </div>
+          <button class="bottom-container-button">Show More</button>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <h1 class="footer-title">Linked<span class="footer-logo">in</span></h1>
+      <div class="footer-box">
+        <div class="footer-container">
+          <a class="footer-link">About</a>
+          <a class="footer-link">Community Guidelines</a>
+          <a class="footer-link">Privacy & Terms</a>
+          <a class="footer-link">Sales Solutions</a>
+          <a class="footer-link">Safety Center</a>
+        </div>
+        <div class="footer-container">
+          <a class="footer-link">Accessibility</a>
+          <a class="footer-link">Careers</a>
+          <a class="footer-link">Ad Choices</a>
+          <a class="footer-link">Mobile</a>
+        </div>
+        <div class="footer-container">
+          <a class="footer-link">Talent Solutions</a>
+          <a class="footer-link">Marketing Solutions</a>
+          <a class="footer-link">Advertising</a>
+          <a class="footer-link">Small Business</a>
+        </div>
+        <div class="footer-container">
+          <a class="footer-link">Questions?</a>
+          <p class="subcontent__subtitle">Visit our Help Center.</p>
+          <a class="footer-link">Manage your account and privacy?</a>
+          <p class="subcontent__subtitle">Go to your Settings</p>
+        </div>
+      </div>
+      <strong
+        >THIS IS A DEMO OF MY WEB SKILLS. I do not have rights to the LinkedIn
+        name or product.</strong
+      >
+    </footer>
+  </body>
+</html>

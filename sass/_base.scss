@@ -1,0 +1,37 @@
+// resets, variables, mixins, and any utility classes
+$colors: (
+  main-background: rgb(241, 241, 241),
+  container: white,
+  primary: rgb(10, 102, 194),
+  secondary: rgb(37, 178, 37),
+);
+
+$standard-radius: 8px;
+$main-width: 1140px;
+
+@mixin primary-container() {
+  box-sizing: border-box;
+  background-color: map-get($colors, container);
+  border-radius: 8px;
+  box-shadow: 0 0px 2px 0.05px grey;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  position: relative;
+  @content; // put width and height, and others here
+}
+
+@mixin main-section-container() {
+  @include primary-container() {
+    margin-top: 0.5rem;
+    width: 100%;
+    height: fit-content;
+    min-height: 8rem;
+  }
+}
+
+@mixin oval-button() {
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  width: fit-content;
+  cursor: pointer;
+  @content;
+}

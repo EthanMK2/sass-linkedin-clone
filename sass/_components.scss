@@ -1,0 +1,208 @@
+// anything reusable, buttons, navbars, cards,
+
+@use "base" as *;
+
+.main-nav {
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  padding: 0.5rem;
+  z-index: 100;
+
+  .nav-container {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: $main-width;
+    justify-content: center;
+    align-items: center;
+
+    .main-nav__logo {
+      width: 36px;
+      margin: 0 0.5rem;
+    }
+
+    .searchbar {
+      height: fit-content;
+      padding: 0.5rem 0.2rem 0.5rem 2rem;
+      background-color: darken(map-get($colors, main-background), $amount: 1%);
+      border: none;
+      margin: 0 auto;
+      width: 15rem;
+    }
+
+    .main-nav__link {
+      margin: 0.25rem 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: rgb(128, 128, 128);
+      cursor: pointer;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+
+.content-divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  margin: 0.5rem 0;
+}
+
+.bottom-container-button {
+  text-align: center;
+  border-top-width: 1px;
+  border-top-color: rgb(196, 196, 196);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-bottom-left-radius: $standard-radius;
+  border-bottom-right-radius: $standard-radius;
+  width: 100%;
+  height: 2.7rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  background-color: map-get($colors, container);
+  transition: background-color 200ms;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(128, 128, 128);
+
+  &:hover {
+    background-color: rgb(236, 236, 236);
+  }
+}
+
+.round-image-div {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+}
+
+.round-image {
+  width: 100%;
+}
+
+// .subcontent {
+// }
+
+.subcontent__title {
+  font-weight: bold;
+  margin: 0.1rem 0;
+}
+
+.subcontent__subtitle {
+  font-size: 0.8rem;
+  color: rgb(128, 128, 128);
+  margin: 0.5rem 0 1rem 0;
+  width: fit-content;
+}
+
+.subcontent__detail {
+  font-size: 0.85rem;
+  margin: 0.1rem 0 1rem 0;
+}
+
+.button-blue {
+  @include oval-button() {
+    border: none;
+    background-color: map-get($colors, primary);
+    color: white;
+    font-weight: 700;
+    transition: background-color 200ms;
+  }
+
+  &:hover,
+  &:active {
+    background-color: darken(map-get($colors, primary), $amount: 15%);
+  }
+}
+
+.button-blue-hollow {
+  @include oval-button() {
+    color: map-get($colors, primary);
+    font-weight: 700;
+    border-width: 1px;
+    border-color: map-get($colors, primary);
+    background-color: white;
+    transition: all 200ms;
+    box-sizing: content-box;
+  }
+
+  &:hover,
+  &:active {
+    background-color: lighten(map-get($colors, primary), $amount: 50%);
+  }
+}
+
+.button-gray {
+  @include oval-button() {
+    border-width: 1px;
+    border-color: rgb(128, 128, 128);
+    background-color: white;
+    color: rgb(128, 128, 128);
+    font-weight: 700;
+    transition: all 200ms;
+  }
+
+  &:hover,
+  &:active {
+    background-color: lighten(black, $amount: 90%);
+  }
+}
+
+.blue-link {
+  color: lighten(map-get($colors, primary), $amount: 5%);
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.container-item {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin: 0.5rem 0;
+
+  img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+  }
+
+  .subcontent__detail {
+    margin-bottom: 0;
+  }
+
+  .subcontent__subtitle {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    position: fixed;
+
+    .nav-container {
+      display: flex;
+      flex-direction: row;
+
+      .searchbar {
+        margin-right: auto;
+        margin-left: 0;
+      }
+    }
+  }
+}
